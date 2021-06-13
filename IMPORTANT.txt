@@ -1,2 +1,0 @@
-this is just some more info about the 7zip file. i have split it to volumes so the files wern't to big when you extract with 7zip extract the 001 file.
-there are 
