@@ -3,10 +3,7 @@ body {
 	color:white;
 }
 a:link {
-	color:red;
-}
-a:visited {
-	color:yellow;
+	color:white;
 }
 iframe {
   width: 100px;
