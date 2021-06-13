@@ -29,7 +29,7 @@ a:link {
   width:400%;
   height:200%;
   background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3ff 4%, #ff33ff 12.25%, #800080 31.25%, #b300b3 50%);
-  animation: colorChange 3s infinite alternate linear;
+  animation: colorChange 5s infinite alternate linear;
 }
 
 @keyframes colorChange {
