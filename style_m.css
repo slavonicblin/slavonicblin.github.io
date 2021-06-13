@@ -5,41 +5,29 @@ body {
 a:link {
 	color:white;
 }
-#blyat-div {
-  height: 30vh;
-  width: 60vw;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: bold;
-  overflow:hidden;
-  position:relative;
-  z-index:0;
+.box {
+  height:150px;
+  width:150px;
+  border:1px solid;
+  display:inline-block;
 }
-#blyat-div:before {
-  content:"";
-  position:absolute;
-  z-index:-1;
-  top:0;
-  left:0;
-  width:400%;
-  height:200%;
-  background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3ff 4%, #ff33ff 12.25%, #800080 31.25%, #b300b3 50%);
-  animation: colorChange 5s infinite alternate linear;
+.first {
+  background:radial-gradient(10% 100px,red 30%,blue 60%) calc(100% - 50%) calc(100% - 10%)/200% 200%;
+  animation:change1 2s linear infinite alternate;
+}
+.second {
+  background:radial-gradient(20% 20%,yellow 30%,blue)right -50px bottom 0/200% 200%;
+  animation:change2 2s linear infinite alternate;
 }
 
-@keyframes colorChange {
-  from {
-    transform:translateX(-50%);
-  }
-  50% {
-    transform:scaleX(0.75) translateX(-50%)
-  }
+@keyframes change1 {
   to {
-    transform:translateX(-25%);
+    background-position:calc(100% + 10%) calc(100% - 80%);
   }
- }
+}
+
+@keyframes change2 {
+  to {
+    background-position:right -100px bottom -100px;
+  }
+}
