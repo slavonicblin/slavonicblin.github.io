@@ -8,7 +8,7 @@ a:link {
 a:visited {
 	color:yellow;
 }
-body {
+iframe {
   width: 100px;
   height: 100px;
   position: relative;
